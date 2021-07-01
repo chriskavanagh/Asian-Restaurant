@@ -3,7 +3,7 @@ import styles from "../styles/SushiSection.module.css";
 
 export default function SushiSection() {
   return (
-    <div className="container mt-5">
+    <div className="container pt-5">
       <div className="row g-0">
         <div className="col-6  bg-warning">
           <Image
