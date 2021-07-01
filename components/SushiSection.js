@@ -11,7 +11,7 @@ export default function SushiSection() {
             layout="responsive"
             width={648}
             height={394}
-            alt="general chicken sushi"
+            alt="sushi"
           />
         </div>
         <div className="col-6 bg-light">
