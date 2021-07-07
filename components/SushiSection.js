@@ -1,11 +1,12 @@
 import Image from "next/image";
-import styles from "../styles/SushiSection.module.css";
-import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import styles from "../styles/SushiSection.module.css";
 import { useInView } from "react-intersection-observer";
 
 export default function SushiSection() {
   const { ref, inView } = useInView({
+    triggerOnce: true,
     threshold: 0.3,
   });
   const animation = useAnimation();
@@ -14,17 +15,15 @@ export default function SushiSection() {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 0.8,
-          bounce: 0.3,
-        },
+        opacity: 1,
+        scale: 1,
+        transition: { delay: 0.3 },
       });
     }
     if (!inView) {
       animation.start({
-        x: "-100vw",
+        opacity: 0,
+        scale: 0.8,
       });
     }
   }, [inView, animation]);
@@ -34,9 +33,8 @@ export default function SushiSection() {
       controls.start({
         x: 0,
         transition: {
-          type: "spring",
+          ease: "easeIn",
           duration: 0.8,
-          bounce: 0.3,
         },
       });
     }
