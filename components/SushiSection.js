@@ -5,7 +5,9 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function SushiSection() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
   const animation = useAnimation();
   const controls = useAnimation();
 
@@ -15,7 +17,7 @@ export default function SushiSection() {
         x: 0,
         transition: {
           type: "spring",
-          duration: 1,
+          duration: 0.8,
           bounce: 0.3,
         },
       });
@@ -33,7 +35,7 @@ export default function SushiSection() {
         x: 0,
         transition: {
           type: "spring",
-          duration: 1,
+          duration: 0.8,
           bounce: 0.3,
         },
       });
