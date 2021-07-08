@@ -6,7 +6,7 @@ import { motion, useViewportScroll } from "framer-motion";
 
 export default function Top() {
   return (
-    <section className="container myContainer pt-5">
+    <section className="container" style={{ paddingTop: "5rem" }}>
       <div className="row">
         <div className="col-md-4 ">
           <motion.div
@@ -35,7 +35,7 @@ export default function Top() {
             <button
               type="button"
               className="btn btn-light"
-              style={{ marginBottom: "1.5rem" }}
+              style={{ marginBottom: "1.5rem", borderRadius: "17px" }}
             >
               See Our Menu
             </button>

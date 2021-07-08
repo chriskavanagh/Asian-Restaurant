@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 export default function SushiSection() {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.4,
   });
   const animation = useAnimation();
   const controls = useAnimation();
@@ -17,7 +17,7 @@ export default function SushiSection() {
       animation.start({
         opacity: 1,
         scale: 1,
-        transition: { delay: 0.3 },
+        transition: { ease: "easeIn", delay: 0.3 },
       });
     }
     if (!inView) {
@@ -45,7 +45,7 @@ export default function SushiSection() {
     }
   }, [inView, controls]);
   return (
-    <div ref={ref} className="container pt-5" style={{ marginTop: "42rem" }}>
+    <div ref={ref} className="container pt-5" style={{ marginTop: "15rem" }}>
       <div className="row g-0 ">
         <div className="col-xl-6 ">
           <motion.div animate={animation}>
