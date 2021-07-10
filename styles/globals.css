@@ -37,3 +37,6 @@ a {
 .btn {
   color: var(--main-gold) !important;
 }
+.myBtn {
+  color: rgb(138, 136, 12) !important;
+}

@@ -45,7 +45,7 @@ export default function SushiSection() {
     }
   }, [inView, controls]);
   return (
-    <div ref={ref} className="container pt-5" style={{ marginTop: "15rem" }}>
+    <div ref={ref} className="container pt-4" style={{ marginTop: "8rem" }}>
       <div className="row g-0 ">
         <div className="col-xl-6 ">
           <motion.div animate={animation}>

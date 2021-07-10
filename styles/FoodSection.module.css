@@ -1,0 +1,15 @@
+.span {
+  color: rgb(124, 124, 61);
+}
+.section {
+  margin-top: 13rem;
+}
+
+@media screen and (max-width: 780px) {
+  .small {
+    color: red;
+  }
+  .section {
+    margin-top: 3rem;
+  }
+}
