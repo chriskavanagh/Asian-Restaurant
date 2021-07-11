@@ -40,3 +40,11 @@
 #brand {
   color: var(--main-gold);
 }
+.sushi {
+  margin-top: 8rem;
+}
+@media screen and (max-width: 780px) {
+  .sushi {
+    margin-top: 1rem;
+  }
+}

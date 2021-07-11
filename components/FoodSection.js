@@ -4,10 +4,9 @@ import styles from "../styles/FoodSection.module.css";
 export default function FoodSection() {
   return (
     <section
-      className={["container-fluid" + " " + styles.section]}
+      className={["container" + " " + styles.section]}
       style={{
         background: "#28282B",
-        paddingBottom: "8rem",
         paddingTop: "4rem",
       }}
     >
@@ -23,7 +22,7 @@ export default function FoodSection() {
       </div>
       <div className="row justify-content-center">
         <div className="col-lg-4">
-          <div className="card mx-auto" style={{ maxWidth: "30rem" }}>
+          <div className="card mx-auto" style={{ maxWidth: "25rem" }}>
             <Image
               src="/szechuans/spring.jpg"
               layout="responsive"
@@ -50,7 +49,7 @@ export default function FoodSection() {
           </div>
         </div>
         <div className="col-lg-4 ">
-          <div className="card mx-auto" style={{ maxWidth: "30rem" }}>
+          <div className="card mx-auto" style={{ maxWidth: "25rem" }}>
             <Image
               src="/szechuans/gentso.jpg"
               layout="responsive"
@@ -77,7 +76,7 @@ export default function FoodSection() {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="card mx-auto" style={{ maxWidth: "30rem" }}>
+          <div className="card mx-auto" style={{ maxWidth: "25rem" }}>
             <Image
               src="/szechuans/beef.jpg"
               layout="responsive"

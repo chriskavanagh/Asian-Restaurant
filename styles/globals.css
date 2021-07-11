@@ -14,6 +14,7 @@ body {
   margin: 0;
   background-color: #141414;
   box-sizing: border-box;
+  position: relative;
 }
 .content {
   /* background-color: #080808; */
@@ -39,4 +40,16 @@ a {
 }
 .myBtn {
   color: rgb(138, 136, 12) !important;
+}
+.bodyTag {
+  position: relative;
+}
+.circle {
+  clip-path: circle(20% at right top);
+  background-color: blueviolet;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }

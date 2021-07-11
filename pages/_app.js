@@ -4,11 +4,14 @@ import Layout from "../components/Layout";
 import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    document.querySelector("body").classList.add("bodyTag");
+  });
   return (
     <>
       <Head>
