@@ -4,9 +4,9 @@ import Head from "next/head";
 //import styles from "../styles/Home.module.css";
 import SushiSection from "../components/SushiSection";
 import Top from "../components/Top";
-import FoodSection from "../components/FoodSection";
 import Boxes from "../components/Boxes";
 import Spacer from "../components/Spacer";
+//import FoodSection from "../components/FoodSection";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);

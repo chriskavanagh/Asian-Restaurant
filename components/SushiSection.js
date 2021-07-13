@@ -1,10 +1,42 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "../styles/SushiSection.module.css";
 import { useInView } from "react-intersection-observer";
 
-export default function SushiSection() {
+function SushiMobile() {
+  return (
+    <section className="bg-dark">
+      <div className={["container" + " " + styles.sushi]}>
+        <div className="row g-0 ">
+          <div className="col-xl-6 ">
+            <Image
+              src="/szechuans/1.jpg"
+              layout="responsive"
+              width={648}
+              height={394}
+              alt="sushi"
+            />
+          </div>
+          <div className="col-xl-6 bg-light">
+            <div className={styles.rContainer}>
+              <h4 className={styles.myH4}>Discover</h4>
+              <h1 className={styles.myH2}>Our Sushi</h1>
+              <p className={styles.myP}>
+                We offer a wide variety of sushi including our own homemade
+                selections of Sushi roles. Customers love our Spicy Tuna and
+                California Roles!
+              </p>
+              <p className={styles.btmP}>See More Sushi &#129066;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SushiDesktop() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.4,
@@ -78,4 +110,12 @@ export default function SushiSection() {
       </div>
     </section>
   );
+}
+export default function SushiSection() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, [width]);
+
+  return <>{width <= 780 ? <SushiMobile /> : <SushiDesktop />}</>;
 }
