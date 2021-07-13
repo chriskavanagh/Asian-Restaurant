@@ -8,7 +8,6 @@
 }
 @media screen and (max-width: 780px) {
   .top__section {
-    background: inherit;
     padding: 1rem 1rem 1rem 1rem !important;
   }
 }
