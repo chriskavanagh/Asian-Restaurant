@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Boxes() {
   return (
     <>
-      <section className="p-5 " style={{ background: "#393E46" }}>
+      <section className={styles.top__section}>
         <div className="container">
           {/* <div className="text-center mb-5 text-white">
             <h2>

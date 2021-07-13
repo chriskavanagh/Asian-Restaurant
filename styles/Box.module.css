@@ -2,3 +2,13 @@
   font-family: "Poppins", sans-serif;
   color: rgb(124, 124, 61);
 }
+.top__section {
+  background: #393e46;
+  padding: 3rem 0 3rem 0 !important;
+}
+@media screen and (max-width: 780px) {
+  .top__section {
+    background: inherit;
+    padding: 1rem 1rem 1rem 1rem !important;
+  }
+}
