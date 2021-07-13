@@ -38,6 +38,7 @@ export default function Top() {
                   marginTop: "1.5rem",
                   marginBottom: "1.4rem",
                   borderRadius: "17px",
+                  marginLeft: "1rem",
                 }}
               >
                 See Our Menu

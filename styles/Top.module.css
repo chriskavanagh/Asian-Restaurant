@@ -43,4 +43,7 @@
     font-size: 1rem;
     padding: 0 14px 0 14px;
   }
+  .btn-light {
+    margin-left: 1rem;
+  }
 }
