@@ -37,7 +37,6 @@ export default function Top() {
                 style={{
                   marginTop: "1.5rem",
                   marginBottom: "1.4rem",
-                  marginLeft: "15px",
                   borderRadius: "17px",
                 }}
               >
