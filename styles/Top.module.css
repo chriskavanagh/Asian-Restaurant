@@ -1,3 +1,7 @@
+.top__section {
+  padding-top: 4rem;
+}
+
 .topH1 {
   color: white;
   margin-bottom: 5.5rem;
@@ -6,12 +10,12 @@
 }
 .topP {
   color: rgb(167, 161, 161);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
 .btmP {
   color: rgb(167, 161, 161);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
 .span {
@@ -19,4 +23,24 @@
 }
 .arrow {
   margin-left: 3.7rem;
+}
+@media screen and (max-width: 780px) {
+  .top__section {
+    padding-top: 1rem;
+  }
+  .topH1 {
+    font-size: 1.7rem;
+    margin: 0 auto 3rem auto;
+    padding: 0 3.3rem;
+  }
+  .topP {
+    color: rgb(167, 161, 161);
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0 12px 0 12px;
+  }
+  .btmP {
+    font-size: 1rem;
+    padding: 0 14px 0 14px;
+  }
 }

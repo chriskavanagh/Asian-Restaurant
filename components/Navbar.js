@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../styles/NavBar.module.css";
 //import Image from "next/image";
 //import Link from "next/link";
 import {
@@ -14,13 +15,17 @@ export default function Navbar() {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-dark p-4"
+      className="navbar navbar-expand-lg navbar-dark bg-dark p-3"
       style={{
         background: "#080808",
       }}
     >
-      <div className="container-fluid px-5">
-        <a className="navbar-brand" id="brand" href="#">
+      <div className="container-fluid px-1">
+        <a
+          className={["navbar-brand" + " " + styles.small]}
+          id="brand"
+          href="#"
+        >
           Szechuan`s Restaurant
         </a>
         <button

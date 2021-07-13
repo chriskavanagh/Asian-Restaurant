@@ -23,7 +23,7 @@ export default function SushiSection() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        scale: 0.8,
+        scale: 0.6,
       });
     }
   }, [inView, animation]);
@@ -45,35 +45,37 @@ export default function SushiSection() {
     }
   }, [inView, controls]);
   return (
-    <div ref={ref} className={["container" + " " + styles.sushi]}>
-      <div className="row g-0 ">
-        <div className="col-xl-6 ">
-          <motion.div animate={animation}>
-            <Image
-              src="/szechuans/1.jpg"
-              layout="responsive"
-              width={648}
-              height={394}
-              alt="sushi"
-            />
-          </motion.div>
-          {/* <h2>{console.log(scrollY.current, scrollY.prev)}</h2> */}
-        </div>
-        <div className="col-xl-6 bg-light">
-          <motion.div animate={controls}>
-            <div className={styles.rContainer}>
-              <h4 className={styles.myH4}>Discover</h4>
-              <h1 className={styles.myH2}>Our Sushi</h1>
-              <p className={styles.myP}>
-                We offer a wide variety of sushi including our own homemade
-                selections of Sushi roles. Customers love our Spicy Tuna and
-                California Roles!
-              </p>
-              <p className={styles.btmP}>See More Sushi &#129066;</p>
-            </div>
-          </motion.div>
+    <section className="bg-dark">
+      <div ref={ref} className={["container" + " " + styles.sushi]}>
+        <div className="row g-0 ">
+          <div className="col-xl-6 ">
+            <motion.div animate={animation}>
+              <Image
+                src="/szechuans/1.jpg"
+                layout="responsive"
+                width={648}
+                height={394}
+                alt="sushi"
+              />
+            </motion.div>
+            {/* <h2>{console.log(scrollY.current, scrollY.prev)}</h2> */}
+          </div>
+          <div className="col-xl-6 bg-light">
+            <motion.div animate={controls}>
+              <div className={styles.rContainer}>
+                <h4 className={styles.myH4}>Discover</h4>
+                <h1 className={styles.myH2}>Our Sushi</h1>
+                <p className={styles.myP}>
+                  We offer a wide variety of sushi including our own homemade
+                  selections of Sushi roles. Customers love our Spicy Tuna and
+                  California Roles!
+                </p>
+                <p className={styles.btmP}>See More Sushi &#129066;</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -5,6 +5,8 @@ import Head from "next/head";
 import SushiSection from "../components/SushiSection";
 import Top from "../components/Top";
 import FoodSection from "../components/FoodSection";
+import Boxes from "../components/Boxes";
+import Spacer from "../components/Spacer";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
@@ -24,7 +26,9 @@ export default function Home() {
       </Head>
 
       <Top />
-      <FoodSection />
+      <Spacer />
+      <Boxes />
+      {/* <FoodSection /> */}
       <SushiSection />
     </>
   );

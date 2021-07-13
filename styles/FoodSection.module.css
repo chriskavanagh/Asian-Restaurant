@@ -2,10 +2,17 @@
   color: rgb(124, 124, 61);
 }
 .section {
-  margin-top: 13rem;
   padding-bottom: 8rem;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #141414;
+  padding-top: 4rem;
+}
+.myH1 {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 2.8rem !important;
+  margin-bottom: 7rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -15,5 +22,10 @@
   .section {
     margin-top: 3rem;
     padding-bottom: 3rem;
+    /*  padding-left: 1rem;
+    padding-right: 1rem; */
+  }
+  .myH1 {
+    font-size: 2rem !important;
   }
 }

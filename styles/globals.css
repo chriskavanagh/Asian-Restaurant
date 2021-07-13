@@ -12,13 +12,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #141414;
+
   box-sizing: border-box;
   position: relative;
 }
 .content {
   /* background-color: #080808; */
-  background-color: #141414;
+
   box-sizing: border-box;
   color: inherit;
 }

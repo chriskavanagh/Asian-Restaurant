@@ -1,0 +1,5 @@
+@media screen and (max-width: 780px) {
+  .small {
+    font-size: 1.2rem !important;
+  }
+}
