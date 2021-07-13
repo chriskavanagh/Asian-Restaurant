@@ -32,7 +32,7 @@ export default function Spacer() {
               width: 100%;
             }
             .text {
-              font-size: 1.4rem;
+              font-size: 1.3rem;
             }
         `}
       </style>
