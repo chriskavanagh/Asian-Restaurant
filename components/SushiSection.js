@@ -5,6 +5,9 @@ import styles from "../styles/SushiSection.module.css";
 import { useInView } from "react-intersection-observer";
 
 function SushiMobile() {
+  useEffect(() => {
+    console.log("sushi mobile loaded");
+  });
   return (
     <section className="bg-dark">
       <div className={["container" + " " + styles.sushi]}>
@@ -76,6 +79,7 @@ function SushiDesktop() {
       });
     }
   }, [inView, controls]);
+
   return (
     <section className="bg-dark">
       <div ref={ref} className={["container" + " " + styles.sushi]}>
@@ -111,11 +115,48 @@ function SushiDesktop() {
     </section>
   );
 }
+
 export default function SushiSection() {
-  const [width, setWidth] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  console.log(isMobile);
   useEffect(() => {
-    setWidth(window.innerWidth);
+    let mounted = true;
+    const mediaQuery = "(max-width: 768px)";
+    const mediaQueryList = window.matchMedia(mediaQuery);
+    if (mounted) {
+      mediaQueryList.addEventListener("resize", (e) => {
+        if (e.matches) {
+          setIsMobile(true);
+        } else {
+          setIsMobile(false);
+        }
+      });
+    }
+    return () =>
+      mediaQueryList.removeEventListener("resize", (e) => {
+        if (e.matches) {
+          setIsMobile(true);
+        } else {
+          setIsMobile(false);
+        }
+      });
+  }, [isMobile]);
+
+  return <>{isMobile ? <SushiMobile /> : <SushiDesktop />}</>;
+}
+
+/* export default function SushiSection() {
+  const [width, setWidth] = useState(0);
+  console.log(width);
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () =>
+      window.removeEventListener("resize", handleResize, { passive: true });
   }, [width]);
 
   return <>{width <= 780 ? <SushiMobile /> : <SushiDesktop />}</>;
-}
+} */
