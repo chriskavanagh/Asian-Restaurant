@@ -81,7 +81,7 @@ function SushiDesktop() {
   }, [inView, controls]);
 
   return (
-    <section className="bg-dark">
+    <section className={["bg-dark" + " " + styles.section]}>
       <div ref={ref} className={["container" + " " + styles.sushi]}>
         <div className="row g-0 ">
           <div className="col-xl-6 ">

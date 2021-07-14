@@ -1,6 +1,7 @@
-/* .sushiSection {
-  background-color: black;
-} */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 .rContainer {
   display: grid;
@@ -44,10 +45,10 @@
 #brand {
   color: var(--main-gold);
 }
-.sushi {
-  padding-top: 2rem;
+/* .sushi {
+  padding-top: 3rem;
   padding-bottom: 2rem;
-}
+} */
 @media screen and (max-width: 780px) {
   .sushi {
     padding-top: 2rem;
