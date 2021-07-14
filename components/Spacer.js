@@ -4,7 +4,7 @@ export default function Spacer() {
       <div className="container">
         <div className="d-md-flex justify-content-between align-items-center">
           <h3
-            className="mb-3 mb-md-0 text"
+            className="mb-3 mb-md-0 text-center"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Sign Up For Our Newsletter
