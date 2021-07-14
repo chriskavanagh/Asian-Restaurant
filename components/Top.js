@@ -33,13 +33,7 @@ export default function Top() {
 
               <button
                 type="button"
-                className="btn btn-light"
-                style={{
-                  marginTop: "1.5rem",
-                  marginBottom: "1.4rem",
-                  borderRadius: "17px",
-                  marginLeft: "1rem",
-                }}
+                className={["btn btn-light" + " " + styles.btn]}
               >
                 See Our Menu
               </button>

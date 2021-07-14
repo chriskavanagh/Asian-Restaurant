@@ -85,6 +85,16 @@ export default function Navbar() {
             color: #ffffff;
             font-weight: bolder;
           }
+          @media screen and (max-width: 1196px) {
+            .active {
+              display: none;
+            }
+          }
+          @media screen and (max-width: 1015px) {
+            span {
+              font-size: 15px;
+            }
+          }
         `}
       </style>
     </nav>
