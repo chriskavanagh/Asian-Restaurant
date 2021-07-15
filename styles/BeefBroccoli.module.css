@@ -76,4 +76,8 @@
     grid-column: 2/6;
     align-self: start;
   }
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+  }
 }
