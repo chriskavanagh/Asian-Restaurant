@@ -32,7 +32,7 @@ export default function NameSpacer() {
             }
             .nameHead {
               font-size: 1.5rem;
-              color: gold;
+              color: #b8860b;
             }
         `}
       </style>
