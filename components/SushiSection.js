@@ -14,7 +14,7 @@ function SushiMobile() {
         <div className="row g-0 ">
           <div className="col-xl-6 ">
             <Image
-              src="/szechuans/1.jpg"
+              src="/svg/driver.svg"
               layout="responsive"
               width={648}
               height={394}
@@ -119,44 +119,35 @@ function SushiDesktop() {
 export default function SushiSection() {
   const [isMobile, setIsMobile] = useState(false);
   console.log(isMobile);
+
+  // checks screen size when dom loads
   useEffect(() => {
     let mounted = true;
     const mediaQuery = "(max-width: 768px)";
     const mediaQueryList = window.matchMedia(mediaQuery);
     if (mounted) {
-      mediaQueryList.addEventListener("resize", (e) => {
-        if (e.matches) {
-          setIsMobile(true);
-        } else {
-          setIsMobile(false);
-        }
-      });
+      if (mediaQueryList.matches) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
     }
-    return () =>
-      mediaQueryList.removeEventListener("resize", (e) => {
-        if (e.matches) {
-          setIsMobile(true);
-        } else {
-          setIsMobile(false);
-        }
-      });
-  }, [isMobile]);
+  }, []);
 
   return <>{isMobile ? <SushiMobile /> : <SushiDesktop />}</>;
 }
 
 /* export default function SushiSection() {
   const [width, setWidth] = useState(0);
-  console.log(width);
+
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("DOMContentLoaded", handleResize);
 
-    return () =>
-      window.removeEventListener("resize", handleResize, { passive: true });
-  }, [width]);
+    return () => window.removeEventListener("DOMContentLoaded", handleResize);
+  }, []);
 
   return <>{width <= 780 ? <SushiMobile /> : <SushiDesktop />}</>;
 } */
