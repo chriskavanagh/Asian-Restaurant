@@ -7,6 +7,8 @@ import Top from "../components/Top";
 import Boxes from "../components/Boxes";
 import Spacer from "../components/Spacer";
 //import FoodSection from "../components/FoodSection";
+import BeefBroccoli from "../components/BeefBrocoli";
+import NameSpacer from "../components/NameSpacer";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
@@ -26,9 +28,11 @@ export default function Home() {
       </Head>
 
       <Top />
-      <Spacer />
+      <NameSpacer />
       <Boxes />
       {/* <FoodSection /> */}
+      <BeefBroccoli />
+      <Spacer />
       <SushiSection />
     </>
   );
