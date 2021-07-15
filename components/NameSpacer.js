@@ -31,7 +31,7 @@ export default function NameSpacer() {
               font-size: 1rem;
             }
             .nameHead {
-              font-size: 1.2rem;
+              font-size: 1.3rem;
             }
         `}
       </style>
