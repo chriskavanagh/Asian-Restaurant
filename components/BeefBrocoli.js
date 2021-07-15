@@ -20,7 +20,7 @@ export default function BeefBroccoli() {
           </div>
           <div className="col-xl-6 ">
             <Image
-              src="/szechuans/beef.jpg"
+              src="/szechuans/1.jpg"
               layout="responsive"
               width={648}
               height={394}
