@@ -4,7 +4,7 @@ export default function NameSpacer() {
       <div className="container">
         <div className="d-md-flex justify-content-between align-items-center">
           <h3
-            className="mb-3 mb-md-0 text-center"
+            className="mb-3 mb-md-0 text-center nameHead"
             style={{
               fontFamily: "Poppins, sans-serif",
             }}
@@ -29,6 +29,9 @@ export default function NameSpacer() {
             }
             .address {
               font-size: 1rem;
+            }
+            .nameHead {
+              font-size: 1.2rem;
             }
         `}
       </style>
