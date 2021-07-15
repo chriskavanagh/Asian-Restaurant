@@ -14,7 +14,7 @@ function SushiMobile() {
         <div className="row g-0 ">
           <div className="col-xl-6 ">
             <Image
-              src="/svg/driver.svg"
+              src="/szechuans/1.jpg"
               layout="responsive"
               width={648}
               height={394}
