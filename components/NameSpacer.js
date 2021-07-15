@@ -13,7 +13,7 @@ export default function NameSpacer() {
           </h3>
 
           <div>
-            <h3>4987 Bernard Dr Roanoke, VA 24018</h3>
+            <h3 className="address">4987 Bernard Dr Roanoke, VA 24018</h3>
           </div>
         </div>
       </div>
@@ -26,6 +26,9 @@ export default function NameSpacer() {
             }
             .text {
               font-size: 1.3rem;
+            }
+            .address {
+              font-size: 1.1rem;
             }
         `}
       </style>
