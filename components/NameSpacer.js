@@ -23,6 +23,7 @@ export default function NameSpacer() {
           h1 {
             color: #b8860b;
             letter-spacing: 1.5px !important;
+            text-decoration: underline;
           }
         `}
       </style>
