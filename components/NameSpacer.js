@@ -24,6 +24,18 @@ export default function NameSpacer() {
             color: #b8860b;
             letter-spacing: 1.5px !important;
             text-decoration: underline;
+            transition: all 1s ease-out;
+          }
+          @media screen and (max-width: 780px) {
+            h1 {
+              font-size: 2rem;
+            }
+            h5 {
+              font-size: 1.8rem;
+            }
+            h6 {
+              font-size: 1.6rem;
+            }
           }
         `}
       </style>

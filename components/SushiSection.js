@@ -5,9 +5,6 @@ import styles from "../styles/SushiSection.module.css";
 import { useInView } from "react-intersection-observer";
 
 function SushiMobile() {
-  useEffect(() => {
-    console.log("sushi mobile loaded");
-  });
   return (
     <section className="bg-dark">
       <div className={["container" + " " + styles.sushi]}>

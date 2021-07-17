@@ -24,9 +24,9 @@ export default function Spacer() {
       </div>
       <style jsx>
         {`
-        .news-input {
-          width: 50%;
-        }
+          .news-input {
+            width: 50%;
+          }
           @media screen and (max-width: 780px) {
             .news-input {
               width: 100%;
@@ -34,6 +34,7 @@ export default function Spacer() {
             .text {
               font-size: 1.3rem;
             }
+          }
         `}
       </style>
     </section>
