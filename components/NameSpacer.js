@@ -9,7 +9,7 @@ export default function NameSpacer() {
           <div className="col-lg-12">
             <div className="d-flex flex-column align-items-center p-2">
               <h1 className="mb-4">Szechuan`s Restaurant</h1>
-              <h5>4987 Bernard Dr Roanoke, VA 24018</h5>
+              <h5>4987 Bernard Dr Roanoke, VA</h5>
               <h6>(540) 989-9487</h6>
             </div>
           </div>
