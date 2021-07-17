@@ -122,15 +122,12 @@ export default function SushiSection() {
 
   // checks screen size when dom loads
   useEffect(() => {
-    let mounted = true;
     const mediaQuery = "(max-width: 768px)";
     const mediaQueryList = window.matchMedia(mediaQuery);
-    if (mounted) {
-      if (mediaQueryList.matches) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
+    if (mediaQueryList.matches) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
     }
   }, []);
 
