@@ -17,7 +17,7 @@ export default function Spacer() {
               placeholder="Enter Dish"
             />
             <button className="btn btn-dark btn-lg" type="button">
-              Submit
+              Search
             </button>
           </div>
         </div>
