@@ -3,6 +3,7 @@ import Head from "next/head";
 import Top from "../components/Top";
 import Boxes from "../components/Boxes";
 import Spacer from "../components/Spacer";
+import Footer from "../components/Footer";
 import NameSpacer from "../components/NameSpacer";
 import BeefBroccoli from "../components/BeefBrocoli";
 import SushiSection from "../components/SushiSection";
@@ -30,6 +31,7 @@ export default function Home() {
       <BeefBroccoli />
       <Spacer />
       <SushiSection />
+      <Footer />
     </>
   );
 }
