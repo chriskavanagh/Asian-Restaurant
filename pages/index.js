@@ -1,24 +1,22 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import Head from "next/head";
-//import Image from "next/image";
-//import styles from "../styles/Home.module.css";
-import SushiSection from "../components/SushiSection";
 import Top from "../components/Top";
 import Boxes from "../components/Boxes";
 import Spacer from "../components/Spacer";
-//import FoodSection from "../components/FoodSection";
-import BeefBroccoli from "../components/BeefBrocoli";
+import Footer from "../components/Footer";
 import NameSpacer from "../components/NameSpacer";
+import BeefBroccoli from "../components/BeefBrocoli";
+import SushiSection from "../components/SushiSection";
 
 export default function Home() {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.scrollY);
+  /* const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.scrollY); */
 
-  useEffect(() => {
+  /* useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, []); */
   return (
     <>
       <Head>
@@ -30,10 +28,10 @@ export default function Home() {
       <Top />
       <NameSpacer />
       <Boxes />
-      {/* <FoodSection /> */}
       <BeefBroccoli />
       <Spacer />
       <SushiSection />
+      <Footer />
     </>
   );
 }
