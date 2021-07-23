@@ -1,6 +1,6 @@
 export default function Spacer() {
   return (
-    <section className="text-light p-5" style={{ background: "#393e46e2" }}>
+    <section className="text-light p-4" style={{ background: "#393e46e2" }}>
       <div className="container">
         <div className="d-md-flex justify-content-between align-items-center">
           <h3
