@@ -4,7 +4,7 @@ export default function Spacer() {
       <div className="container">
         <div className="d-md-flex justify-content-between align-items-center">
           <h3
-            className="mb-3 mb-md-0 text-center"
+            className="mb-3 mb-md-0 text-center txt"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Find Your Favorite Dish!
@@ -24,6 +24,9 @@ export default function Spacer() {
       </div>
       <style jsx>
         {`
+          .txt {
+            color: #fcfcf8;
+          }
           .news-input {
             width: 50%;
           }

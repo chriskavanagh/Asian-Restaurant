@@ -3,7 +3,7 @@ import styles from "../styles/Footer.module.css";
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      <footer className="container">
+      <footer className="container-fluid">
         <div className="row">
           <div className="col-lg-4">
             <div className="text-center">
@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="txt">4987 Bernard Dr</div>
               <div className="txt">Roanoke, VA 24018</div>
               <div className="txt">
-                Szechuan`s Restaurant &copy;Copyright 2021
+                &copy;Copyright 2021 Szechuan`s Restaurant
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 Delivery: 11:30 AM - 3:00 PM, 5:00 PM - 9:00 PM
               </div>
               <div className="txt">Pick Up: 11:30 AM - 9:00 PM</div>
-              <div className="txt">Closed Tuesdays</div>
+              <div className="txt closure">Closed Tuesdays</div>
             </div>
           </div>
         </div>
@@ -45,6 +45,9 @@ const Footer = () => {
             color: #b8860b;
             font-size: 1rem;
             letter-spacing: 1.5px;
+          }
+          .closure {
+            color: rgb(124, 124, 61);
           }
           @media screen and (max-width: 991px) {
             h5 {
