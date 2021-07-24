@@ -23,6 +23,7 @@ export default function NameSpacer() {
             letter-spacing: 1.5px !important;
             text-decoration: underline;
           }
+
           @media screen and (max-width: 780px) {
             h1 {
               font-size: 1.4rem;
