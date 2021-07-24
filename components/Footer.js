@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="text-center">
               <h5 className="mb-3">Our Services</h5>
               <div className="txt">
-                Delivery: 11:30 AM - 3:00 PM, 5:00 PM - 9:00 PM
+                Delivery: 11:30 - 3:00 PM, 5:00 - 9:00 PM
               </div>
               <div className="txt">Pick Up: 11:30 AM - 9:00 PM</div>
               <div className="txt closure">Closed Tuesdays</div>
