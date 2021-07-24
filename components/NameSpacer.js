@@ -26,7 +26,7 @@ export default function NameSpacer() {
           @media screen and (max-width: 780px) {
             h1 {
               font-size: 1.4rem;
-              letter-spacing: 1px !important;
+              letter-spacing: normal !important;
             }
             h5 {
               font-size: 1.1rem;
