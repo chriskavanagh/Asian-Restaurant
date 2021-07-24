@@ -4,3 +4,8 @@
   background: #171717;
   font-family: "Poppins", sans-serif !important;
 }
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 2rem;
+  }
+}
